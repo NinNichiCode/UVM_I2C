@@ -1,0 +1,4 @@
+var g_db_data = [
+{dummy:0},
+{name:'cov_inst',f:1,type:6,id:1152,tb:'26',h:'25',m:'1',hp:'96.15%',cov:['98.00%','G'],g:'100.00%',gp:['98.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/i2c_pkg/i2c_coverage',parent:'1147'}];
+processConsCovergroupsData(g_db_data);

@@ -1,0 +1,602 @@
+# vsim -c -coverage top "+UVM_TESTNAME=write_test" -voptargs="+acc" -l logs/write_test.log -do "coverage save -onexit cov/write_test.ucdb; run -all; quit -f" 
+# Start time: 06:35:41 on Dec 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.i2c_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.i2c_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/write_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test write_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               write_test              -     @471 
+#   env                      i2c_env                 -     @478 
+#     agent                  i2c_agent               -     @489 
+#       drv                  i2c_driver              -     @526 
+#         rsp_port           uvm_analysis_port       -     @541 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       mon                  i2c_monitor             -     @519 
+#         item_send_port     uvm_analysis_port       -     @667 
+#       seqr                 uvm_sequencer           -     @549 
+#         rsp_export         uvm_analysis_export     -     @556 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @650 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    i2c_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    i2c_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @681 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 206 ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 0: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 105  din : 206
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=105, data_in=ce, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:105, wdata:206 arr_wr:206
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 213 ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 72  din : 213
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=72, data_in=d5, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:72, wdata:213 arr_wr:213
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 173 ADDR : 109 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 109  din : 173
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 1490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=109, data_in=ad, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 1490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:109, wdata:173 arr_wr:173
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 1490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 121 ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 1490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 39  din : 121
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 1990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=39, data_in=79, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 1990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:39, wdata:121 arr_wr:121
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 1990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 43 ADDR : 36 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 1990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 36  din : 43
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=36, data_in=2b, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 2490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:36, wdata:43 arr_wr:43
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 2490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 110 ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 2490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 59  din : 110
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=59, data_in=6e, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 2990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:59, wdata:110 arr_wr:110
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 2990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 47 ADDR : 98 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 2990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 98  din : 47
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=98, data_in=2f, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 3490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:98, wdata:47 arr_wr:47
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 3490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 150 ADDR : 101 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 3490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 101  din : 150
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=101, data_in=96, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 3990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:101, wdata:150 arr_wr:150
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 3990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 224 ADDR : 42 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 3990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 42  din : 224
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=42, data_in=e0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 4490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:42, wdata:224 arr_wr:224
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 4490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 213 ADDR : 55 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 4490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 55  din : 213
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=55, data_in=d5, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 4990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:55, wdata:213 arr_wr:213
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 4990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 69 ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 4990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 104  din : 69
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=104, data_in=45, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 5490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:104, wdata:69 arr_wr:69
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 5490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 201 ADDR : 114 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 5490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 114  din : 201
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=114, data_in=c9, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 5990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:114, wdata:201 arr_wr:201
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 5990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 85 ADDR : 99 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 5990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 99  din : 85
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=99, data_in=55, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 6490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:99, wdata:85 arr_wr:85
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 6490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 218 ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 6490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 94  din : 218
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=94, data_in=da, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 6990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:94, wdata:218 arr_wr:218
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 6990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 231 ADDR : 48 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 6990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 48  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 7490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=48, data_in=e7, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 7490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:48, wdata:231 arr_wr:231
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 7490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 206 ADDR : 48 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 7490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 48  din : 206
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 7990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=48, data_in=ce, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 7990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:48, wdata:206 arr_wr:206
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 7990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 58 ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 7990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 91  din : 58
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 8490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=91, data_in=3a, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 8490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:91, wdata:58 arr_wr:58
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 8490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 177 ADDR : 33 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 8490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 33  din : 177
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 8990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=33, data_in=b1, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 8990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:33, wdata:177 arr_wr:177
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 8990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 202 ADDR : 40 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 8990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 40  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 9490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=40, data_in=ca, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 9490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:40, wdata:202 arr_wr:202
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 9490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 209 ADDR : 121 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 9490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 121  din : 209
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 9990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=121, data_in=d1, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 9990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:121, wdata:209 arr_wr:209
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 9990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 13 ADDR : 33 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 9990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 33  din : 13
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 10490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=33, data_in=d, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 10490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:33, wdata:13 arr_wr:13
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 10490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 24 ADDR : 76 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 10490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 76  din : 24
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 10990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=76, data_in=18, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 10990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:76, wdata:24 arr_wr:24
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 10990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 105 ADDR : 74 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 10990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 74  din : 105
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 11490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=74, data_in=69, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 11490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:74, wdata:105 arr_wr:105
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 11490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 189 ADDR : 11 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 11490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 11  din : 189
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 11990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=11, data_in=bd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 11990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:11, wdata:189 arr_wr:189
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 11990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 223 ADDR : 100 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 11990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 100  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 12490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=100, data_in=df, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 12490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:100, wdata:223 arr_wr:223
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 12490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 217 ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 12490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 39  din : 217
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 12990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=39, data_in=d9, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 12990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:39, wdata:217 arr_wr:217
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 12990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 56 ADDR : 7 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 12990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 7  din : 56
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 13490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=7, data_in=38, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 13490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:7, wdata:56 arr_wr:56
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 13490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 76 ADDR : 7 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 13490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 7  din : 76
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 13990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=7, data_in=4c, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 13990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:7, wdata:76 arr_wr:76
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 13990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 228 ADDR : 34 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 13990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 34  din : 228
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 14490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=34, data_in=e4, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 14490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:34, wdata:228 arr_wr:228
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 14490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 138 ADDR : 27 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 14490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 27  din : 138
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 14990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=27, data_in=8a, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 14990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:27, wdata:138 arr_wr:138
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 14990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 141 ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 14990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 21  din : 141
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 15490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=21, data_in=8d, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 15490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:21, wdata:141 arr_wr:141
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 15490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 10 ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 15490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 108  din : 10
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 15990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=108, data_in=a, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 15990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:108, wdata:10 arr_wr:10
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 15990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 28 ADDR : 64 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 15990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 64  din : 28
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 16490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=64, data_in=1c, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 16490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:64, wdata:28 arr_wr:28
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 16490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 99 ADDR : 75 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 16490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 75  din : 99
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 16990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=75, data_in=63, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 16990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:75, wdata:99 arr_wr:99
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 16990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 16 ADDR : 114 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 16990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 114  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 17490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=114, data_in=10, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 17490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:114, wdata:16 arr_wr:16
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 17490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 168 ADDR : 84 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 17490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 84  din : 168
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 17990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=84, data_in=a8, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 17990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:84, wdata:168 arr_wr:168
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 17990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 140 ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 17990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 59  din : 140
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 18490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=59, data_in=8c, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 18490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:59, wdata:140 arr_wr:140
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 18490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 99 ADDR : 122 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 18490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 122  din : 99
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 18990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=122, data_in=63, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 18990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:122, wdata:99 arr_wr:99
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 18990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 253 ADDR : 82 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 18990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 82  din : 253
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 19490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=82, data_in=fd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 19490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:82, wdata:253 arr_wr:253
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 19490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 31 ADDR : 11 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 19490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 11  din : 31
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 19990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=11, data_in=1f, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 19990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:11, wdata:31 arr_wr:31
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 19990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 231 ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 19990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 104  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 20490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=104, data_in=e7, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 20490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:104, wdata:231 arr_wr:231
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 20490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 24 ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 20490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 62  din : 24
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 20990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=62, data_in=18, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 20990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:62, wdata:24 arr_wr:24
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 20990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 221 ADDR : 126 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 20990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 126  din : 221
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 21490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=126, data_in=dd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 21490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:126, wdata:221 arr_wr:221
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 21490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 231 ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 21490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 94  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 21990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=94, data_in=e7, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 21990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:94, wdata:231 arr_wr:231
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 21990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 119 ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 21990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 62  din : 119
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 22490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=62, data_in=77, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 22490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:62, wdata:119 arr_wr:119
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 22490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 221 ADDR : 10 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 22490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 10  din : 221
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 22990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=10, data_in=dd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 22990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:10, wdata:221 arr_wr:221
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 22990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 35 ADDR : 79 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 22990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 79  din : 35
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 23490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=79, data_in=23, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 23490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:79, wdata:35 arr_wr:35
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 23490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 16 ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 23490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 72  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 23990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=72, data_in=10, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 23990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:72, wdata:16 arr_wr:16
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 23990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 223 ADDR : 22 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 23990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 22  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 24490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=22, data_in=df, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 24490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:22, wdata:223 arr_wr:223
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 24490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 71 ADDR : 13 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 24490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 13  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 24990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=13, data_in=47, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 24990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:13, wdata:71 arr_wr:71
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 24990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 227 ADDR : 121 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 24990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 121  din : 227
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 25490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=121, data_in=e3, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 25490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:121, wdata:227 arr_wr:227
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 25490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 146 ADDR : 123 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 25490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 123  din : 146
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 25990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=123, data_in=92, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 25990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:123, wdata:146 arr_wr:146
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 25990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 87 ADDR : 63 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 25990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 63  din : 87
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 26490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=63, data_in=57, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 26490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:63, wdata:87 arr_wr:87
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 26490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 114 ADDR : 111 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 26490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 111  din : 114
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 26990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=111, data_in=72, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 26990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:111, wdata:114 arr_wr:114
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 26990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 126 ADDR : 5 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 26990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 5  din : 126
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 27490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=5, data_in=7e, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 27490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:5, wdata:126 arr_wr:126
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 27490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 109 ADDR : 81 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 27490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 81  din : 109
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 27990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=81, data_in=6d, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 27990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:81, wdata:109 arr_wr:109
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 27990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 161 ADDR : 60 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 27990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 60  din : 161
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 28490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=60, data_in=a1, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 28490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:60, wdata:161 arr_wr:161
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 28490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 95 ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 28490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 105  din : 95
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 28990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=105, data_in=5f, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 28990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:105, wdata:95 arr_wr:95
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 28990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 167 ADDR : 124 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 28990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 124  din : 167
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 29490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=124, data_in=a7, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 29490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:124, wdata:167 arr_wr:167
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 29490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 71 ADDR : 54 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 29490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 54  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 29990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=54, data_in=47, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 29990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:54, wdata:71 arr_wr:71
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 29990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 183 ADDR : 81 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 29990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 81  din : 183
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 30490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=81, data_in=b7, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 30490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:81, wdata:183 arr_wr:183
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 30490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 33 ADDR : 4 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 30490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 4  din : 33
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 30990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=4, data_in=21, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 30990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:4, wdata:33 arr_wr:33
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 30990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 83 ADDR : 0 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 30990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 0  din : 83
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 31490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=0, data_in=53, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 31490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:0, wdata:83 arr_wr:83
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 31490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 249 ADDR : 20 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 31490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 20  din : 249
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 31990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=20, data_in=f9, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 31990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:20, wdata:249 arr_wr:249
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 31990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 222 ADDR : 45 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 31990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 45  din : 222
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 32490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=45, data_in=de, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 32490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:45, wdata:222 arr_wr:222
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 32490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 143 ADDR : 73 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 32490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 73  din : 143
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 32990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=73, data_in=8f, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 32990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:73, wdata:143 arr_wr:143
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 32990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 71 ADDR : 3 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 32990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 3  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 33490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=3, data_in=47, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 33490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:3, wdata:71 arr_wr:71
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 33490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 152 ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 33490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 94  din : 152
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 33990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=94, data_in=98, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 33990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:94, wdata:152 arr_wr:152
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 33990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 3 ADDR : 46 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 33990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 46  din : 3
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 34490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=46, data_in=3, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 34490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:46, wdata:3 arr_wr:3
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 34490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 253 ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 34490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 92  din : 253
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 34990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=92, data_in=fd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 34990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:92, wdata:253 arr_wr:253
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 34990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 218 ADDR : 117 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 34990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 117  din : 218
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 35490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=117, data_in=da, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 35490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:117, wdata:218 arr_wr:218
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 35490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 223 ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 35490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 104  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 35990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=104, data_in=df, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 35990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:104, wdata:223 arr_wr:223
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 35990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 33 ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 35990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 21  din : 33
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 36490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=21, data_in=21, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 36490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:21, wdata:33 arr_wr:33
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 36490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 202 ADDR : 4 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 36490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 4  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 36990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=4, data_in=ca, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 36990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:4, wdata:202 arr_wr:202
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 36990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 92 ADDR : 64 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 36990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 64  din : 92
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 37490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=64, data_in=5c, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 37490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:64, wdata:92 arr_wr:92
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 37490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 57 ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 37490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 105  din : 57
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 37990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=105, data_in=39, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 37990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:105, wdata:57 arr_wr:57
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 37990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 106 ADDR : 0 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 37990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 0  din : 106
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 38490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=0, data_in=6a, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 38490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:0, wdata:106 arr_wr:106
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 38490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 192 ADDR : 96 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 38490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 96  din : 192
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 38990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=96, data_in=c0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 38990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:96, wdata:192 arr_wr:192
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 38990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 200 ADDR : 96 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 38990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 96  din : 200
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 39490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=96, data_in=c8, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 39490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:96, wdata:200 arr_wr:200
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 39490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 39 ADDR : 10 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 39490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 10  din : 39
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 39990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=10, data_in=27, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 39990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:10, wdata:39 arr_wr:39
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 39990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 202 ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 39990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 108  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 40490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=108, data_in=ca, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 40490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:108, wdata:202 arr_wr:202
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 40490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 17 ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 40490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 92  din : 17
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 40990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=92, data_in=11, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 40990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:92, wdata:17 arr_wr:17
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 40990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 182 ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 40990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 108  din : 182
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 41490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=108, data_in=b6, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 41490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:108, wdata:182 arr_wr:182
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 41490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 16 ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 41490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 72  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 41990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=72, data_in=10, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 41990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:72, wdata:16 arr_wr:16
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 41990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 129 ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 41990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 62  din : 129
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 42490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=62, data_in=81, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 42490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:62, wdata:129 arr_wr:129
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 42490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 32 ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 42490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 21  din : 32
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 42990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=21, data_in=20, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 42990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:21, wdata:32 arr_wr:32
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 42990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 219 ADDR : 67 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 42990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 67  din : 219
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 43490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=67, data_in=db, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 43490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:67, wdata:219 arr_wr:219
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 43490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 203 ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 43490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 92  din : 203
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 43990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=92, data_in=cb, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 43990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:92, wdata:203 arr_wr:203
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 43990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 153 ADDR : 20 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 43990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 20  din : 153
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 44490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=20, data_in=99, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 44490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:20, wdata:153 arr_wr:153
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 44490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 40 ADDR : 100 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 44490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 100  din : 40
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 44990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=100, data_in=28, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 44990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:100, wdata:40 arr_wr:40
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 44990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 41 ADDR : 95 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 44990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 95  din : 41
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 45490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=95, data_in=29, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 45490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:95, wdata:41 arr_wr:41
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 45490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 211 ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 45490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 59  din : 211
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 45990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=59, data_in=d3, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 45990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:59, wdata:211 arr_wr:211
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 45990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 248 ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 45990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 39  din : 248
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 46490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=39, data_in=f8, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 46490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:39, wdata:248 arr_wr:248
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 46490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 246 ADDR : 97 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 46490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 97  din : 246
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 46990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=97, data_in=f6, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 46990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:97, wdata:246 arr_wr:246
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 46990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 187 ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 46990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 91  din : 187
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 47490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=91, data_in=bb, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 47490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:91, wdata:187 arr_wr:187
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 47490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 205 ADDR : 30 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 47490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 30  din : 205
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 47990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=30, data_in=cd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 47990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:30, wdata:205 arr_wr:205
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 47990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 68 ADDR : 19 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 47990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 19  din : 68
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 48490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=19, data_in=44, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 48490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:19, wdata:68 arr_wr:68
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 48490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 46 ADDR : 88 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 48490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 88  din : 46
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 48990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=88, data_in=2e, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 48990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:88, wdata:46 arr_wr:46
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 48990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 191 ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 48990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 91  din : 191
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 49490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=91, data_in=bf, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 49490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:91, wdata:191 arr_wr:191
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/write_seq.sv(17) @ 49490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : WRITE DIN : 244 ADDR : 95 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 49490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 95  din : 244
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 49990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=95, data_in=f4, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 49990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:95, wdata:244 arr_wr:244
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 49990: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 49990: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  406
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]   100
+# [MON]   100
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]   100
+# [SEQ]   100
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 49990 ns  Iteration: 62  Instance: /top
+# Saving coverage database on exit...
+# End time: 06:36:13 on Dec 24,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0

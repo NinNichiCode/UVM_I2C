@@ -1,0 +1,301 @@
+# vsim -c -coverage top "+UVM_TESTNAME=reset_dut_test" -voptargs="+acc" -l logs/reset_dut_test.log -do "coverage save -onexit cov/reset_dut_test.ucdb; run -all; quit -f" 
+# Start time: 06:36:22 on Dec 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.i2c_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.i2c_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/reset_dut_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test reset_dut_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               reset_dut_test          -     @471 
+#   env                      i2c_env                 -     @478 
+#     agent                  i2c_agent               -     @489 
+#       drv                  i2c_driver              -     @526 
+#         rsp_port           uvm_analysis_port       -     @541 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       mon                  i2c_monitor             -     @519 
+#         item_send_port     uvm_analysis_port       -     @667 
+#       seqr                 uvm_sequencer           -     @549 
+#         rsp_export         uvm_analysis_export     -     @556 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @650 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    i2c_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    i2c_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @681 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 0: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 10: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 10: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 10: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 30: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 30: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 30: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 50: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 50: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 50: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 70: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 70: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 70: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 90: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 90: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 90: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 110: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 110: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 110: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 130: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 130: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 130: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 150: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 150: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 150: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 170: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 170: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 170: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 190: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 190: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 190: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 210: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 210: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 210: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 230: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 230: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 230: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 250: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 250: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 250: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 270: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 270: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 270: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 290: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 290: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 290: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 310: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 310: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 310: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 330: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 330: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 330: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 350: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 350: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 350: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 370: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 370: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 370: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 390: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 390: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 390: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 410: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 410: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 410: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 430: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 430: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 430: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 450: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 450: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 450: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 470: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 470: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 470: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 490: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 490: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 490: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 510: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 510: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 510: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 530: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 530: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 530: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 550: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 550: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 550: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 570: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 570: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 570: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 590: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 590: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 590: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 610: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 610: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 610: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 630: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 630: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 630: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 650: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 650: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 650: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 670: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 670: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 670: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 690: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 690: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 690: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 710: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 710: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 710: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 730: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 730: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 730: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 750: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 750: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 750: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 770: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 770: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 770: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 790: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 790: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 790: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 810: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 810: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 810: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 830: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 830: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 830: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 850: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 850: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 850: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 870: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 870: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 870: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 890: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 890: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 890: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 910: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 910: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 910: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 930: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 930: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 930: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 950: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 950: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 950: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 970: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/reset_dut_seq.sv(17) @ 970: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : RESET
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 970: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 990: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 990: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 990: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  156
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]    50
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]    50
+# [SEQ]    50
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 990 ns  Iteration: 61  Instance: /top
+# Saving coverage database on exit...
+# End time: 06:36:26 on Dec 24,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

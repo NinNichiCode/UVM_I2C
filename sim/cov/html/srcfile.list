@@ -1,0 +1,15 @@
+../i2c_mem.v
+../tb/i2c_if.sv
+../tb/top.sv
+../uvc/env/i2c_coverage.sv
+../uvc/env/i2c_driver.sv
+../uvc/env/i2c_monitor.sv
+../uvc/env/i2c_pkg.sv
+../uvc/env/i2c_scoreboard.sv
+../uvc/seq/full_range_seq.sv
+../uvc/seq/read_seq.sv
+../uvc/seq/reset_dut_seq.sv
+../uvc/seq/transaction.sv
+../uvc/seq/wr_bulk_rd_bulk_seq.sv
+../uvc/seq/write_seq.sv
+../uvc/tests/base_test.sv

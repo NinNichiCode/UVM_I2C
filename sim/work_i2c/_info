@@ -1,0 +1,195 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/book_chip/course_ud/Practice_UVM_code/Verify_i2c/sim
+T_opt
+!s110 1766558144
+VH^;C?kUoTcdPi4S9;K<b<1
+04 3 4 work top fast 0
+=1-dc4a3ef1b5db-694b89be-35d-1258
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+Yi2c_if
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1766558121
+!i10b 1
+!s100 mO?WfebjKkKCXgTB;2NGa3
+IncYcO3[THfhX8KS`>BBOI1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 i2c_if_sv_unit
+S1
+R0
+w1766566028
+8../tb/i2c_if.sv
+F../tb/i2c_if.sv
+L0 1
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1766558117.000000
+Z7 !s107 ../uvc/tests/full_range_test.sv|../uvc/tests/wr_bulk_rd_bulk_test.sv|../uvc/tests/reset_dut_test.sv|../uvc/tests/read_test.sv|../uvc/tests/write_test.sv|../uvc/tests/base_test.sv|../uvc/env/i2c_env.sv|../uvc/env/i2c_coverage.sv|../uvc/env/i2c_scoreboard.sv|../uvc/env/i2c_agent.sv|../uvc/env/i2c_monitor.sv|../uvc/env/i2c_driver.sv|../uvc/seq/full_range_seq.sv|../uvc/seq/wr_bulk_rd_bulk_seq.sv|../uvc/seq/reset_dut_seq.sv|../uvc/seq/read_seq.sv|../uvc/seq/write_seq.sv|../uvc/seq/transaction.sv|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../tb/top.sv|../uvc/env/i2c_pkg.sv|../tb/i2c_if.sv|../i2c_mem.v|
+Z8 !s90 -work|work|-sv|-cover|bcetf|../i2c_mem.v|../tb/i2c_if.sv|+incdir+../uvc/seq|+incdir+../uvc/env|+incdir+../uvc/tests|../uvc/env/i2c_pkg.sv|../tb/top.sv|
+!i113 0
+Z9 !s102 -cover bcetf
+Z10 o-work work -sv -cover bcetf -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -work work -sv -cover bcetf +incdir+../uvc/seq +incdir+../uvc/env +incdir+../uvc/tests -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vi2c_mem
+R2
+R3
+!i10b 1
+!s100 o23BkO08Y1[;kKEAP0>X=2
+IioZ2JN2N6GS@Hoj_KUgKi1
+R4
+!s105 i2c_mem_v_unit
+S1
+R0
+w1766582679
+8../i2c_mem.v
+F../i2c_mem.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+Xi2c_pkg
+!s115 i2c_if
+R2
+Z12 DXx6 mtiUvm 7 uvm_pkg 0 22 3zPkj@YUcM=M^m3zCLh<H1
+!s110 1766558126
+!i10b 1
+!s100 dRJBCKjJX^_mDWQ=9V2:n3
+IPMn8fl`B9khiS2@>ccH8?1
+VPMn8fl`B9khiS2@>ccH8?1
+S1
+R0
+w1766583285
+8../uvc/env/i2c_pkg.sv
+F../uvc/env/i2c_pkg.sv
+Z13 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z14 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z15 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z16 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z17 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z18 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z19 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z20 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z21 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z22 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z23 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z24 FD:/questasim_b_install/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+F../uvc/seq/transaction.sv
+F../uvc/seq/write_seq.sv
+F../uvc/seq/read_seq.sv
+F../uvc/seq/reset_dut_seq.sv
+F../uvc/seq/wr_bulk_rd_bulk_seq.sv
+F../uvc/seq/full_range_seq.sv
+F../uvc/env/i2c_driver.sv
+F../uvc/env/i2c_monitor.sv
+F../uvc/env/i2c_agent.sv
+F../uvc/env/i2c_scoreboard.sv
+F../uvc/env/i2c_coverage.sv
+F../uvc/env/i2c_env.sv
+F../uvc/tests/base_test.sv
+F../uvc/tests/write_test.sv
+F../uvc/tests/read_test.sv
+F../uvc/tests/reset_dut_test.sv
+F../uvc/tests/wr_bulk_rd_bulk_test.sv
+F../uvc/tests/full_range_test.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtop
+R2
+R12
+Z25 DXx4 work 7 i2c_pkg 0 22 PMn8fl`B9khiS2@>ccH8?1
+DXx4 work 11 top_sv_unit 0 22 fN60KH0i?O8G]Bb3J^YIV1
+R4
+r1
+!s85 0
+!i10b 1
+!s100 6^ZOR4:MhKV64]=0bHS5I1
+IVmW`ZSF9S?afCUiYc7h1L1
+!s105 top_sv_unit
+S1
+R0
+Z26 w1766566404
+Z27 8../tb/top.sv
+Z28 F../tb/top.sv
+L0 6
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+Xtop_sv_unit
+R2
+R12
+R25
+VfN60KH0i?O8G]Bb3J^YIV1
+r1
+!s85 0
+!i10b 1
+!s100 c`6SW4Q9VQjKo:;^6ioeP1
+IfN60KH0i?O8G]Bb3J^YIV1
+!i103 1
+S1
+R0
+R26
+R27
+R28
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
+R24
+L0 3
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1

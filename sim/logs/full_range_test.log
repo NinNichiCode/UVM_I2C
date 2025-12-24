@@ -1,0 +1,162 @@
+# vsim -c -coverage top "+UVM_TESTNAME=full_range_test" -voptargs="+acc" -l logs/full_range_test.log -do "coverage save -onexit cov/full_range_test.ucdb; run -all; quit -f" 
+# Start time: 06:36:35 on Dec 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.i2c_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.i2c_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/full_range_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test full_range_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               full_range_test         -     @471 
+#   env                      i2c_env                 -     @478 
+#     agent                  i2c_agent               -     @489 
+#       drv                  i2c_driver              -     @526 
+#         rsp_port           uvm_analysis_port       -     @541 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       mon                  i2c_monitor             -     @519 
+#         item_send_port     uvm_analysis_port       -     @667 
+#       seqr                 uvm_sequencer           -     @549 
+#         rsp_export         uvm_analysis_export     -     @556 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @650 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    i2c_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    i2c_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @681 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 0: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 127  din : 170
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=127, data_in=aa, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:127, wdata:170 arr_wr:170
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 490: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 127  din : 121
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 990: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=127, data_in=79, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 990: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:127, wdata:121 arr_wr:121
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 990: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 90  din : 255
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 1490: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=90, data_in=ff, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 1490: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:90, wdata:255 arr_wr:255
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 1490: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 1510: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 1510: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 109  din : 85
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2010: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=109, data_in=55, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 2010: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:109, wdata:85 arr_wr:85
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 2010: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 2030: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 2030: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 69  din : 255
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2510: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=69, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 2510: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:69, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 2510: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 69  din : 206
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3010: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=69, data_in=ce, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 3010: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:69, wdata:206 arr_wr:206
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 3010: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 121  din : 85
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3510: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=121, data_in=55, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 3510: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:121, wdata:85 arr_wr:85
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(24) @ 3510: uvm_test_top.env.agent.drv [DRV] System Reset
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(22) @ 3530: uvm_test_top.env.scb [SCO] SYSTEM RESET DETECTED
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 3530: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 106  din : 0
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4030: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=106, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 4030: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:106, wdata:0 arr_wr:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 4030: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 106  din : 189
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4530: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=106, data_in=bd, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 4530: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:106, wdata:189 arr_wr:189
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 4530: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 5  din : 255
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5010: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=5, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 5010: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 5010: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 5  din : 76
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5510: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=5, data_in=4c, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 5510: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:5, wdata:76 arr_wr:76
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 5510: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 10  din : 85
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6010: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=10, data_in=55, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 6010: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:10, wdata:85 arr_wr:85
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/env/i2c_driver.sv(35) @ 6010: uvm_test_top.env.agent.drv [DRV] mode : WRITE addr : 10  din : 10
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6510: uvm_test_top.env.agent.mon [MON] DETECTED writed: addr=10, data_in=a, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(27) @ 6510: uvm_test_top.env.scb [SCO] DATA WRITE OP  addr:10, wdata:10 arr_wr:10
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 6510: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 6510: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   51
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]    16
+# [MON]    13
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]    16
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 6510 ns  Iteration: 62  Instance: /top
+# Saving coverage database on exit...
+# End time: 06:36:39 on Dec 24,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

@@ -1,0 +1,7 @@
+var g_data = {
+g1147:[{dummy:0},
+{name:'cov_inst',f:1,type:1,id:1152,tb:'26',h:'25',m:'1',hp:'96.15%',cov:['98.00%','G'],g:'100.00%',gp:['98.00%','G'],opts:[[],['merge_instance','auto(true)']],parent:'1147'},
+{name:'\\/i2c_pkg::i2c_coverage::cov_inst ',f:1,type:2,id:1158,tb:'26',h:'25',m:'1',hp:'96.15%',cov:['98.00%','G'],g:'100.00%',gp:['98.00%','G'],opts:[[],['per_instance','true']],cvg:'cov_inst',parent:'1152'}],
+dummyEnd:0
+};
+processCovergroupsData(g_data);

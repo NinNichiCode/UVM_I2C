@@ -1,0 +1,602 @@
+# vsim -c -coverage top "+UVM_TESTNAME=read_test" -voptargs="+acc" -l logs/read_test.log -do "coverage save -onexit cov/read_test.ucdb; run -all; quit -f" 
+# Start time: 06:36:16 on Dec 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.i2c_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.i2c_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c_mem(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading D:/questasim_b_install/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit cov/read_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test read_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               read_test               -     @471 
+#   env                      i2c_env                 -     @478 
+#     agent                  i2c_agent               -     @489 
+#       drv                  i2c_driver              -     @526 
+#         rsp_port           uvm_analysis_port       -     @541 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       mon                  i2c_monitor             -     @519 
+#         item_send_port     uvm_analysis_port       -     @667 
+#       seqr                 uvm_sequencer           -     @549 
+#         rsp_export         uvm_analysis_export     -     @556 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @650 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    i2c_coverage            -     @503 
+#       analysis_imp         uvm_analysis_imp        -     @510 
+#     scb                    i2c_scoreboard          -     @496 
+#       item_recv_imp        uvm_analysis_imp        -     @681 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 0: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 0: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 105  din : 206
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 470: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=105, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 470: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:105, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 470: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 470: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 72  din : 213
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 950: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=72, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 950: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:72, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 950: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 109 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 950: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 109  din : 173
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 1430: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=109, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 1430: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:109, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 1430: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 1430: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 39  din : 121
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 1910: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=39, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 1910: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:39, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 1910: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 36 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 1910: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 36  din : 43
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2390: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=36, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 2390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:36, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 2390: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 2390: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 59  din : 110
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 2870: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=59, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 2870: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:59, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 2870: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 98 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 2870: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 98  din : 47
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3350: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=98, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 3350: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:98, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 3350: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 101 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 3350: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 101  din : 150
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 3830: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=101, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 3830: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:101, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 3830: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 42 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 3830: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 42  din : 224
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4310: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=42, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 4310: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:42, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 4310: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 55 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 4310: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 55  din : 213
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 4790: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=55, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 4790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:55, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 4790: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 4790: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 104  din : 69
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5270: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=104, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 5270: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:104, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 5270: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 114 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 5270: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 114  din : 201
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 5750: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=114, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 5750: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:114, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 5750: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 99 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 5750: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 99  din : 85
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6230: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=99, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 6230: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:99, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 6230: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 6230: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 94  din : 218
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 6710: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=94, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 6710: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:94, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 6710: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 48 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 6710: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 48  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 7190: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=48, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 7190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:48, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 7190: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 48 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 7190: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 48  din : 206
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 7670: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=48, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 7670: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:48, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 7670: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 7670: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 91  din : 58
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 8150: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=91, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 8150: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:91, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 8150: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 33 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 8150: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 33  din : 177
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 8630: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=33, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 8630: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:33, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 8630: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 40 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 8630: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 40  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 9110: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=40, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 9110: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:40, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 9110: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 121 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 9110: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 121  din : 209
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 9590: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=121, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 9590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:121, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 9590: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 33 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 9590: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 33  din : 13
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 10070: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=33, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 10070: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:33, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 10070: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 76 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 10070: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 76  din : 24
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 10550: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=76, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 10550: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:76, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 10550: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 74 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 10550: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 74  din : 105
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 11030: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=74, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 11030: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:74, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 11030: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 11 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 11030: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 11  din : 189
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 11510: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=11, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 11510: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:11, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 11510: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 100 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 11510: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 100  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 11990: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=100, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 11990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:100, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 11990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 11990: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 39  din : 217
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 12470: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=39, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 12470: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:39, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 12470: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 7 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 12470: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 7  din : 56
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 12950: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=7, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 12950: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:7, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 12950: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 7 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 12950: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 7  din : 76
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 13430: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=7, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 13430: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:7, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 13430: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 34 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 13430: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 34  din : 228
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 13910: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=34, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 13910: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:34, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 13910: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 27 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 13910: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 27  din : 138
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 14390: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=27, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 14390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:27, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 14390: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 14390: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 21  din : 141
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 14870: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=21, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 14870: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 14870: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 14870: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 108  din : 10
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 15350: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=108, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 15350: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:108, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 15350: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 64 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 15350: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 64  din : 28
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 15830: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=64, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 15830: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:64, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 15830: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 75 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 15830: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 75  din : 99
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 16310: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=75, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 16310: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:75, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 16310: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 114 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 16310: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 114  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 16790: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=114, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 16790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:114, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 16790: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 84 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 16790: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 84  din : 168
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 17270: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=84, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 17270: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:84, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 17270: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 17270: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 59  din : 140
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 17750: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=59, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 17750: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:59, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 17750: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 122 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 17750: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 122  din : 99
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 18230: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=122, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 18230: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:122, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 18230: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 82 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 18230: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 82  din : 253
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 18710: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=82, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 18710: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:82, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 18710: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 11 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 18710: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 11  din : 31
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 19190: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=11, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 19190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:11, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 19190: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 19190: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 104  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 19670: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=104, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 19670: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:104, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 19670: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 19670: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 62  din : 24
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 20150: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=62, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 20150: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:62, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 20150: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 126 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 20150: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 126  din : 221
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 20630: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=126, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 20630: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:126, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 20630: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 20630: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 94  din : 231
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 21110: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=94, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 21110: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:94, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 21110: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 21110: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 62  din : 119
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 21590: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=62, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 21590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:62, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 21590: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 10 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 21590: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 10  din : 221
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 22070: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=10, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 22070: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 22070: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 79 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 22070: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 79  din : 35
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 22550: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=79, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 22550: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:79, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 22550: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 22550: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 72  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 23030: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=72, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 23030: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:72, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 23030: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 22 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 23030: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 22  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 23510: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=22, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 23510: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:22, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 23510: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 13 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 23510: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 13  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 23990: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=13, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 23990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:13, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 23990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 121 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 23990: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 121  din : 227
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 24470: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=121, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 24470: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:121, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 24470: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 123 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 24470: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 123  din : 146
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 24950: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=123, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 24950: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:123, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 24950: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 63 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 24950: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 63  din : 87
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 25430: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=63, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 25430: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:63, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 25430: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 111 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 25430: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 111  din : 114
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 25910: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=111, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 25910: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:111, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 25910: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 5 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 25910: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 5  din : 126
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 26390: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=5, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 26390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:5, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 26390: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 81 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 26390: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 81  din : 109
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 26870: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=81, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 26870: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:81, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 26870: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 60 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 26870: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 60  din : 161
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 27350: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=60, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 27350: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:60, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 27350: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 27350: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 105  din : 95
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 27830: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=105, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 27830: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:105, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 27830: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 124 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 27830: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 124  din : 167
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 28310: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=124, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 28310: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:124, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 28310: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 54 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 28310: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 54  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 28790: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=54, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 28790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:54, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 28790: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 81 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 28790: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 81  din : 183
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 29270: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=81, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 29270: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:81, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 29270: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 4 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 29270: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 4  din : 33
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 29750: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=4, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 29750: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 29750: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 0 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 29750: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 0  din : 83
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 30230: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=0, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 30230: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 30230: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 20 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 30230: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 20  din : 249
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 30710: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=20, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 30710: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 30710: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 45 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 30710: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 45  din : 222
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 31190: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=45, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 31190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:45, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 31190: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 73 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 31190: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 73  din : 143
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 31670: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=73, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 31670: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:73, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 31670: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 3 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 31670: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 3  din : 71
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 32150: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=3, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 32150: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:3, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 32150: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 94 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 32150: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 94  din : 152
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 32630: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=94, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 32630: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:94, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 32630: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 46 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 32630: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 46  din : 3
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 33110: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=46, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 33110: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:46, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 33110: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 33110: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 92  din : 253
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 33590: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=92, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 33590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:92, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 33590: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 117 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 33590: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 117  din : 218
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 34070: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=117, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 34070: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:117, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 34070: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 104 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 34070: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 104  din : 223
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 34550: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=104, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 34550: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:104, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 34550: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 34550: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 21  din : 33
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 35030: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=21, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 35030: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 35030: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 4 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 35030: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 4  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 35510: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=4, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 35510: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:4, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 35510: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 64 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 35510: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 64  din : 92
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 35990: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=64, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 35990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:64, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 35990: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 105 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 35990: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 105  din : 57
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 36470: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=105, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 36470: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:105, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 36470: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 0 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 36470: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 0  din : 106
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 36950: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=0, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 36950: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:0, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 36950: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 96 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 36950: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 96  din : 192
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 37430: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=96, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 37430: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:96, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 37430: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 96 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 37430: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 96  din : 200
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 37910: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=96, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 37910: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:96, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 37910: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 10 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 37910: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 10  din : 39
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 38390: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=10, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 38390: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:10, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 38390: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 38390: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 108  din : 202
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 38870: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=108, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 38870: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:108, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 38870: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 38870: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 92  din : 17
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 39350: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=92, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 39350: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:92, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 39350: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 108 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 39350: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 108  din : 182
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 39830: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=108, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 39830: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:108, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 39830: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 72 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 39830: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 72  din : 16
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 40310: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=72, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 40310: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:72, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 40310: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 62 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 40310: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 62  din : 129
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 40790: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=62, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 40790: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:62, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 40790: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 21 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 40790: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 21  din : 32
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 41270: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=21, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 41270: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:21, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 41270: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 67 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 41270: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 67  din : 219
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 41750: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=67, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 41750: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:67, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 41750: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 92 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 41750: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 92  din : 203
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 42230: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=92, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 42230: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:92, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 42230: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 20 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 42230: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 20  din : 153
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 42710: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=20, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 42710: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:20, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 42710: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 100 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 42710: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 100  din : 40
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 43190: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=100, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 43190: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:100, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 43190: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 95 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 43190: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 95  din : 41
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 43670: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=95, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 43670: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:95, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 43670: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 59 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 43670: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 59  din : 211
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 44150: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=59, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 44150: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:59, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 44150: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 39 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 44150: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 39  din : 248
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 44630: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=39, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 44630: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:39, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 44630: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 97 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 44630: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 97  din : 246
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 45110: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=97, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 45110: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:97, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 45110: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 45110: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 91  din : 187
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 45590: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=91, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 45590: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:91, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 45590: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 30 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 45590: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 30  din : 205
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 46070: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=30, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 46070: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:30, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 46070: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 19 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 46070: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 19  din : 68
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 46550: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=19, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 46550: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:19, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 46550: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 88 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 46550: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 88  din : 46
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 47030: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=88, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 47030: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:88, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 47030: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 91 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 47030: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 91  din : 191
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 47510: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=91, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 47510: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:91, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO ../uvc/seq/read_seq.sv(17) @ 47510: uvm_test_top.env.agent.seqr@@seq [SEQ] MODE : READ ADDR : 95 
+# UVM_INFO ../uvc/env/i2c_driver.sv(45) @ 47510: uvm_test_top.env.agent.drv [DRV] mode : READ addr : 95  din : 244
+# UVM_INFO ../uvc/env/i2c_monitor.sv(54) @ 47990: uvm_test_top.env.agent.mon [MON] DETECTED readd: addr=95, data_in=0, data_out=0
+# UVM_INFO ../uvc/env/i2c_scoreboard.sv(34) @ 47990: uvm_test_top.env.scb [SCO] DATA MATCHED : addr:95, rdata:0
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 47990: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvc/tests/base_test.sv(40) @ 47990: uvm_test_top [BASE_TEST] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  406
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [BASE_TEST]     1
+# [DRV]   100
+# [MON]   100
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCO]   100
+# [SEQ]   100
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : D:/questasim_b_install/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 47990 ns  Iteration: 62  Instance: /top
+# Saving coverage database on exit...
+# End time: 06:36:20 on Dec 24,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
