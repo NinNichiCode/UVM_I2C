@@ -18,7 +18,7 @@ full_range_test –> Verifies full address range access
 
 i2c_test –> Integrated I2C functionality test
 
-Functional Coverage
++ Functional Coverage
 
 Functional coverage is collected using UCDB
 
