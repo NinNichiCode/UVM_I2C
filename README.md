@@ -1,6 +1,16 @@
 + Overview
 
-This project implements a UVM-based verification environment for an I2C memory controller (i2c_mem.v).
+This project implements a simplified I2C-like protocol for educational and verification purposes.
+
+The focus is on:
+- FSM-based protocol modeling
+- Master–slave interaction
+- UVM verification methodology
+
+Note:
+This design is NOT electrically or timing compliant
+with the official I2C specification.
+
 The verification focuses on validating correct I2C transactions such as reset, read, write, bulk transfers, and full address range access, with functional coverage collection using QuestaSim, executed via Cygwin on Windows.
 
 
